@@ -77,7 +77,9 @@ export default function App() {
   <i className="circle"></i>
       <div className="w-100" style={{ maxWidth: "650px" }}>
         <Title title="Start your journey to Coding Conf 2025" />
-        <div className="flex-grow-1">
+
+        <div className="w-100 mx-aut d-flex justify-content-center align-items-center">
+
           <Form formData={formData} errors={errors} handleChange={handleChange} handleSubmit={handleSubmit} />
         </div>
         
