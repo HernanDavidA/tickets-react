@@ -1,0 +1,85 @@
+body{
+  background-image: url('./assets/images/background-desktop.png')!important;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: 'RoboticFont';
+  src: url('./assets/fonts/static/Inconsolata-Bold.ttf') format('truetype');
+
+  font-family: 'RoboticText';
+  src: url('./assets/fonts/static/Inconsolata-Regular.ttf') format('truetype');
+
+  font-family: 'RoboticInfo';
+  src: url('./assets/fonts/static/Inconsolata-Regular.ttf') format('truetype');
+}
+
+.robotic-font {
+  font-family: 'RoboticFont', monospace !important;
+}
+
+.robotic-font-text{
+  font-family: 'RoboticText', monospace !important;
+
+}
+
+.robotic-font-info{
+  font-family: 'RobotoInfo', monospace !important;
+}
+
+
+
+.info{
+  background-image: url('./assets/images/icon-info.svg');
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 5px;
+  background-repeat: no-repeat;
+}
+.pattern-lines {
+  background-image: url('./assets/images/pattern-lines.svg');
+  width: 100%;
+  height: 50%;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 10px;
+}
+.lines-bottom {
+  background-image: url('./assets/images/pattern-squiggly-line-bottom-desktop.svg');
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 50%;
+  position: fixed;
+  bottom: 0vh;
+  left: 0;
+}
+
+.lines-top {
+  background-image: url('./assets/images/pattern-squiggly-line-top.svg');
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 50%;
+  position: fixed;
+  top: 0vh;
+  left: 800px;
+}
+
+.circle {
+  background-image: url('./assets/images/pattern-circle.svg');
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 50%;
+  position: fixed;
+  top: 150px;
+  left: 800px;
+}
+
+.pattern-lines,
+.lines-bottom,
+.lines-top, 
+.cirlce {
+  position: fixed;
+  pointer-events: none; /* Hace que el elemento no bloquee clics */
+  z-index: 1; /* Lo envía al fondo */
+}
