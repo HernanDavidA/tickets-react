@@ -30,28 +30,28 @@ export default function FormComponent({ formData, errors, handleChange, handleSu
                 <small>Upload your photo (JPG or PNG, max size: 5MB).</small>
                 </label>
             <input type="file" className="file-input" id="avatar" name="avatar" onChange={handleChange} />
-            {errors.avatar && <p className="text-danger robotic-font-info">{errors.avatar}</p>}
+            {errors.avatar && <p className="text-danger text-error robotic-font-text"> <i className="info"> </i>{errors.avatar}</p>}
         </div>
   
         {/* Full Name */ }
     <div className="custom-input-container">
         <label htmlFor="name" className="custom-label robotic-font-info">Full Name</label>
         <input type="text" className="custom-input" id="name" name="name" placeholder="Enter your name" value={formData.name} onChange={handleChange} />
-        {errors.name && <p className="text-danger robotic-font-info"> <i className="info"> </i>{errors.name}</p>}
+        {errors.name && <p className="text-danger text-error robotic-font-text"> <i className="info"> </i> {errors.name}</p>}
     </div>
 
     {/* Email */ }
     <div className="custom-input-container">
         <label htmlFor="email" className="custom-label robotic-font-info">Email Address</label>
         <input type="email" className="custom-input" id="email" name="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} />
-        {errors.email && <p className="text-danger robotic-font-info">{errors.email}</p>}
+        {errors.email && <p className="text-danger text-error robotic-font-text"><i className="info"> </i> {errors.email}</p>}
     </div>
 
     {/* GitHub Username */ }
     <div className="custom-input-container">
         <label htmlFor="githubUsername" className="custom-label robotic-font-info">GitHub Username</label>
         <input type="text" className="custom-input" id="githubUsername" name="githubUsername" placeholder="@yourusername" value={formData.githubUsername} onChange={handleChange} />
-        {errors.githubUsername && <p className="text-danger robotic-font-info">{errors.githubUsername}</p>}
+        {errors.githubUsername && <p className="text-danger text-error robotic-font-text"> <i className="info"> </i> {errors.githubUsername}</p>}
     </div>
 
     {/* Submit Button */ }
