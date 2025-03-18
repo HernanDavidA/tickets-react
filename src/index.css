@@ -12,30 +12,34 @@ body{
 }
 
 @font-face {
-  font-family: 'RoboticFont';
+  font-family: 'Inconsolata-Bold';
   src: url('./assets/fonts/static/Inconsolata-Bold.ttf') format('truetype');
 
-  font-family: 'RoboticText';
+  font-family: 'Inconsolata-Regular';
   src: url('./assets/fonts/static/Inconsolata-Regular.ttf') format('truetype');
 
-  font-family: 'RoboticInfo';
+  font-family: 'Incosolata-Medium';
   src: url('./assets/fonts/static/Inconsolata-Medium.ttf') format('truetype');
 
-  font-family: 'RobotoMedium';
+  font-family: 'Inconsolata-ExtraBold';
   src: url('./assets/fonts/static/Inconsolata-ExtraBold.ttf') format('truetype');
 }
 
 .robotic-font {
-  font-family: 'RoboticFont', monospace !important;
+  font-family: 'Inconsolata-Bold', monospace !important;
 }
 
 .robotic-font-text{
-  font-family: 'RoboticText', monospace !important;
+  font-family: 'Inconsolata-Regular', monospace !important;
 
 }
 
 .robotic-font-info{
-  font-family: 'RobotoInfo', monospace !important;
+  font-family: 'Incosolata-Medium', monospace !important;
+}
+
+.robotic-font-extra-bold{
+  font-family: 'Inconsolata-ExtraBold', monospace !important;
 }
 
 
@@ -92,5 +96,5 @@ body{
 .cirlce {
   position: fixed;
   pointer-events: none; /* Hace que el elemento no bloquee clics */
-  z-index: 1; /* Lo envía al fondo */
+  z-index: -2; /* Lo envía al fondo */
 }

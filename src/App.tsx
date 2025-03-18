@@ -57,7 +57,7 @@ export default function App() {
     if (Object.keys(validationErrors).length === 0) {
       setSubmittedData(formData);
       setTimeout(() => {
-        window.location.reload(); // Recarga la página después de mostrar los datos
+        window.location.reload();
       }, 3000);
     } else {
       setErrors(validationErrors);
@@ -75,9 +75,12 @@ export default function App() {
   <i className="lines-top"></i>
 
   <i className="circle"></i>
-      <div className="w-100" style={{ maxWidth: "450px" }}>
+      <div className="w-100" style={{ maxWidth: "650px" }}>
         <Title title="Start your journey to Coding Conf 2025" />
-        <Form formData={formData} errors={errors} handleChange={handleChange} handleSubmit={handleSubmit} />
+        <div className="flex-grow-1">
+          <Form formData={formData} errors={errors} handleChange={handleChange} handleSubmit={handleSubmit} />
+        </div>
+        
     
         {/* Mostrar la información antes de recargar */}
 
