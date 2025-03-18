@@ -51,7 +51,7 @@ interface FormProps {
         </div>
   
         {/* Submit Button */}
-        <button type="submit" className="btn btn-danger w-100 rounded-pill fw-bold">Generate My Ticket</button>
+        <button type="submit" className="btn btn-danger w-100 rounded-pill t">Generate My Ticket</button>
       </form>
   
     );

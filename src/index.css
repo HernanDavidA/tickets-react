@@ -1,6 +1,14 @@
 body{
   background-image: url('./assets/images/background-desktop.png')!important;
   background-size: cover;
+
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -11,7 +19,10 @@ body{
   src: url('./assets/fonts/static/Inconsolata-Regular.ttf') format('truetype');
 
   font-family: 'RoboticInfo';
-  src: url('./assets/fonts/static/Inconsolata-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/static/Inconsolata-Medium.ttf') format('truetype');
+
+  font-family: 'RobotoMedium';
+  src: url('./assets/fonts/static/Inconsolata-ExtraBold.ttf') format('truetype');
 }
 
 .robotic-font {
@@ -41,7 +52,7 @@ body{
   background-image: url('./assets/images/pattern-lines.svg');
   width: 100%;
   height: 50%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   position: fixed;
   top: 10px;
 }
@@ -51,7 +62,7 @@ body{
   background-repeat: no-repeat;
   height: 50%;
   position: fixed;
-  bottom: 0vh;
+  bottom: -50px;
   left: 0;
 }
 
@@ -62,7 +73,7 @@ body{
   height: 50%;
   position: fixed;
   top: 0vh;
-  left: 800px;
+  left: 150vh;
 }
 
 .circle {
@@ -72,7 +83,7 @@ body{
   height: 50%;
   position: fixed;
   top: 150px;
-  left: 800px;
+  left: 1200px;
 }
 
 .pattern-lines,
