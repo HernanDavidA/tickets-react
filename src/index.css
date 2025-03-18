@@ -1,8 +1,6 @@
 body{
   background-image: url('./assets/images/background-desktop.png')!important;
   background-size: cover;
-
-
 }
 
 *{
@@ -102,7 +100,8 @@ body{
 .pattern-lines,
 .lines-bottom,
 .lines-top, 
-.cirlce {
+.cirlce,
+.coding-cof {
   position: fixed;
   pointer-events: none; /* Hace que el elemento no bloquee clics */
   z-index: -2; /* Lo envía al fondo */

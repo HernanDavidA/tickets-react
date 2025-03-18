@@ -35,21 +35,21 @@ export default function FormComponent({ formData, errors, handleChange, handleSu
   
         {/* Full Name */ }
     <div className="custom-input-container">
-        <label htmlFor="name" className="custom-label">Full Name</label>
+        <label htmlFor="name" className="custom-label robotic-font-info">Full Name</label>
         <input type="text" className="custom-input" id="name" name="name" placeholder="Enter your name" value={formData.name} onChange={handleChange} />
         {errors.name && <p className="text-danger robotic-font-info"> <i className="info"> </i>{errors.name}</p>}
     </div>
 
     {/* Email */ }
     <div className="custom-input-container">
-        <label htmlFor="email" className="custom-label">Email Address</label>
+        <label htmlFor="email" className="custom-label robotic-font-info">Email Address</label>
         <input type="email" className="custom-input" id="email" name="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} />
         {errors.email && <p className="text-danger robotic-font-info">{errors.email}</p>}
     </div>
 
     {/* GitHub Username */ }
     <div className="custom-input-container">
-        <label htmlFor="githubUsername" className="custom-label">GitHub Username</label>
+        <label htmlFor="githubUsername" className="custom-label robotic-font-info">GitHub Username</label>
         <input type="text" className="custom-input" id="githubUsername" name="githubUsername" placeholder="@yourusername" value={formData.githubUsername} onChange={handleChange} />
         {errors.githubUsername && <p className="text-danger robotic-font-info">{errors.githubUsername}</p>}
     </div>

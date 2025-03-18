@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Form from "./components/Forms";
 import Title from "./components/Title";
+import codingCof from './assets/images/logo-full.svg'
 
 interface FormData {
   avatar: File | null;
@@ -67,15 +68,18 @@ export default function App() {
   
   return  <>  
   <div className="d-flex justify-content-center align-items-center background-desktop">
+
+    
     
   <i className="pattern-lines"> </i>
 
   <i className="lines-bottom"></i>
 
   <i className="lines-top"></i>
-
+  <i className="coding-cof"> </i>
   <i className="circle"></i>
-      <div className="w-100" style={{ maxWidth: "650px" }}>
+      <div className="w-100 mt-2 text-center" style={{ maxWidth: "650px" }}>
+           <img src={codingCof} alt="Cloud Upload" className="w-50 h-50 m-2" />
         <Title title="Start your journey to Coding Conf 2025" />
 
         <div className="w-100 mx-aut d-flex justify-content-center align-items-center">
