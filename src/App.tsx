@@ -21,18 +21,18 @@ export default function App() {
 
   const [errors, setErrors] = useState<{ [key in keyof FormData]?: string }>({});
 
-  const validate = () => {
-    const newErrors: typeof errors = {};
+  // const validate = () => {
+  //   const newErrors: typeof errors = {};
 
-    if (!formData.avatar) newErrors.avatar = "Avatar is required.";
-    if (!formData.name.trim()) newErrors.name = "Name is required.";
-    if (!formData.email.trim() || !/\S+@\S+\.\S+/.test(formData.email))
-      newErrors.email = "Valid email is required.";
-    if (!formData.githubUsername.trim()) newErrors.githubUsername = "GitHub username is required.";
+  //   if (!formData.avatar) newErrors.avatar = "Avatar is required.";
+  //   if (!formData.name.trim()) newErrors.name = "Name is required.";
+  //   if (!formData.email.trim() || !/\S+@\S+\.\S+/.test(formData.email))
+  //     newErrors.email = "Valid email is required.";
+  //   if (!formData.githubUsername.trim()) newErrors.githubUsername = "GitHub username is required.";
 
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
+  //   setErrors(newErrors);
+  //   return Object.keys(newErrors).length === 0;
+  // };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value, files } = e.target;
