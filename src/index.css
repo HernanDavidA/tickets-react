@@ -220,7 +220,7 @@ body{
     height: 100%;
   }
   form{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0)!important;
   }
   body{
     background-image: url('./assets/images/background-mobile.png')!important;
